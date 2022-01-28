@@ -2,15 +2,7 @@
 title: "Let's play together"
 date: 2022-01-21T14:21:18Z
 draft: false
-#kind: "games"
-data: "testData"
-test: "test"
-test2: "test2"
-# games:
-#   - name: Github
-#     icon: fa fa-2x fa-github
-#     weight: 1
-#     url: 'https://github.com/Dez87/'
+layout: "single"
 ---
 
 Here below are my handles on different gaming platforms.\

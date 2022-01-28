@@ -83,7 +83,7 @@ url = "about/"
 [[languages.en.menu.main]]
 name = "Let's play"
 weight = 2
-url = "contact/games"
+url = "games/"
 
 # [[languages.en.menu.main]]
 # name = "Projects"
