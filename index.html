@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Davide Mazzucco — Software Architect. Designing resilient systems, microservices, and CI/CD pipelines." />
+  <meta name="author" content="Davide Mazzucco" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.mazzucco.eu/" />
+  <meta property="og:title" content="Davide Mazzucco — Software Architect" />
+  <meta property="og:description" content="Designing resilient systems, microservices, and CI/CD pipelines." />
+
+  <title>Davide Mazzucco — Software Architect</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <span class="nav-logo">dm<span>.</span></span>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-photo">
+            <!-- Replace images/profile.jpg with your photo -->
+            <img src="images/profile.jpg" alt="Davide Mazzucco"
+                 onerror="this.parentElement.innerHTML='<div class=\'hero-photo-placeholder\'>DM</div>'" />
+          </div>
+
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Davide Mazzucco</h1>
+            <p class="hero-title">Software Architect</p>
+            <p class="hero-tagline">
+              Designing resilient distributed systems, driving modernisation
+              from legacy to cloud-native microservices, and building the
+              engineering culture around them.
+            </p>
+            <a class="btn btn-primary"
+               href="https://www.linkedin.com/in/mazzuccodavide"
+               target="_blank" rel="noopener noreferrer">
+              <!-- LinkedIn icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452H17.21v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.983V9h3.102v1.561h.044c.432-.818 1.487-1.681 3.061-1.681 3.272 0 3.876 2.154 3.876 4.955v6.617zM5.337 7.433a1.8 1.8 0 1 1 0-3.601 1.8 1.8 0 0 1 0 3.601zm1.554 13.019H3.782V9h3.109v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="container">
+        <p class="section-label">Who I am</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+
+        <div class="about-body">
+          <div class="about-text">
+            <p>
+              I'm a software architect based in Italy with over 20 years of
+              experience across web development, fintech, and gaming technology.
+              My career started building web applications and CMS platforms in
+              the early 2000s, then took me to Belgium where I worked on
+              large-scale payment processing systems at Worldline, and brought
+              me back to Italy where I joined the iGaming industry.
+            </p>
+            <p>
+              Over the years I've shifted from writing code to shaping the
+              systems and practices around it — designing microservice
+              architectures, modernising legacy platforms, establishing CI/CD
+              pipelines, and creating the internal tooling that makes engineering
+              teams move faster and safer.
+            </p>
+            <p>
+              I care deeply about software quality, observability, and building
+              things that last. I enjoy bridging the gap between technical
+              complexity and concrete business value.
+            </p>
+          </div>
+
+          <div class="about-facts">
+            <div class="fact-item">
+              <span class="fact-label">Current role</span>
+              <span class="fact-value">Software Architect</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Padova, Italy</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Experience</span>
+              <span class="fact-value">20+ years in software development</span>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Languages</span>
+              <span class="fact-value">Italian (native) · English (fluent)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills">
+      <div class="container">
+        <p class="section-label">What I work with</p>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-divider"></div>
+
+        <div class="skills-groups">
+
+          <div>
+            <p class="skill-group-label">Architecture &amp; Infrastructure</p>
+            <div class="skills-pills">
+              <span class="pill">Software Architecture</span>
+              <span class="pill">Microservices</span>
+              <span class="pill">Docker</span>
+              <span class="pill">CI/CD</span>
+              <span class="pill">Azure DevOps</span>
+              <span class="pill">Distributed Systems</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">Languages &amp; Frameworks</p>
+            <div class="skills-pills">
+              <span class="pill">C#</span>
+              <span class="pill">.NET / ASP.NET Core</span>
+              <span class="pill">.NET Framework</span>
+              <span class="pill">Blazor</span>
+              <span class="pill">Angular</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">HTML / CSS</span>
+              <span class="pill">PowerShell</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">Data &amp; Observability</p>
+            <div class="skills-pills">
+              <span class="pill">SQL Server / T-SQL</span>
+              <span class="pill">Splunk</span>
+              <span class="pill">Grafana</span>
+              <span class="pill">Kibana</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="skill-group-label">Testing &amp; Quality</p>
+            <div class="skills-pills">
+              <span class="pill">xUnit</span>
+              <span class="pill">SpecFlow</span>
+              <span class="pill">Selenium</span>
+              <span class="pill">NCrunch</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience">
+      <div class="container">
+        <p class="section-label">My journey</p>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-divider"></div>
+
+        <div class="timeline">
+
+          <!-- Current role — no company name -->
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-role">Software Architect</span>
+            </div>
+            <p class="timeline-period">2021 – Present · Padova, Italy</p>
+            <div class="timeline-body">
+              <ul>
+                <li>Designing microservice architectures for gaming products built on .NET, deployed in Docker containers.</li>
+                <li>Architecting and implementing CI/CD pipelines via Azure DevOps, from build automation to staged deployment.</li>
+                <li>Building internal back-office portals in Blazor to automate recurring operational workflows.</li>
+                <li>Modernising legacy .NET Framework services and introducing systematic monitoring and alerting strategies.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Worldline via Realdolmen -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-role">Senior .NET Developer</span>
+              <span class="timeline-company">Worldline (via Realdolmen)</span>
+            </div>
+            <p class="timeline-period">May 2017 – Dec 2020 · Huizingen, Belgium</p>
+            <div class="timeline-body">
+              <ul>
+                <li>Member of a Scrum team (3–6 engineers) migrating a legacy ASP/Delphi payment platform to .NET Core microservices.</li>
+                <li>Automated legacy deployments with Octopus Deploy and PowerShell scripts, drastically reducing deployment and validation times on new servers.</li>
+                <li>Implemented PSD2 and COF (Credentials on File) compliance features across the payments platform.</li>
+                <li>Built observability dashboards and alerts with Splunk, Grafana, and Kibana.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Worldline (Ingenico) -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-role">ASP / .NET Developer</span>
+              <span class="timeline-company">Worldline (ex Ingenico ePayments)</span>
+            </div>
+            <p class="timeline-period">Nov 2016 – Apr 2017 · Brussels, Belgium</p>
+            <div class="timeline-body">
+              <ul>
+                <li>Third-level IT support and analysis of legacy ASP payment platform issues.</li>
+                <li>Developed testing and automation tools to support the second-level support team.</li>
+                <li>Created Splunk dashboards for real-time platform health monitoring.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newbit -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-role">Web Developer</span>
+              <span class="timeline-company">Newbit</span>
+            </div>
+            <p class="timeline-period">Feb 2008 – Oct 2016 · Este, Italy</p>
+            <div class="timeline-body">
+              <ul>
+                <li>Analysis and development of websites using Classic ASP and ASP.NET over MS SQL Server.</li>
+                <li>Designed, road-mapped, and built <strong>PowerSport</strong> — an ASP.NET CMS for amateur sports associations that grew to ~300 clients by end of tenure.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Informatica 2000 — minor node -->
+          <div class="timeline-item minor">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-role">IT Technician</span>
+              <span class="timeline-company">Informatica 2000</span>
+            </div>
+            <p class="timeline-period">Mar 2005 – Jan 2006 · Este, Italy</p>
+            <div class="timeline-body">
+              Hardware &amp; software maintenance, PC configuration and assembly.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certification badge -->
+        <div class="cert-badge">
+          <!-- Certificate icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25z" clip-rule="evenodd" />
+          </svg>
+          Microsoft Certified: Programming in C# (70-483) &mdash; 2019
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <div class="container">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-divider" style="margin: 0 auto 48px;"></div>
+        <p class="contact-sub">
+          I'm not actively looking for new opportunities, but I'm always happy
+          to connect with interesting people. The best way to reach me is
+          through LinkedIn.
+        </p>
+        <a class="btn btn-primary"
+           href="https://www.linkedin.com/in/mazzuccodavide"
+           target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452H17.21v-5.569c0-1.328-.026-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.983V9h3.102v1.561h.044c.432-.818 1.487-1.681 3.061-1.681 3.272 0 3.876 2.154 3.876 4.955v6.617zM5.337 7.433a1.8 1.8 0 1 1 0-3.601 1.8 1.8 0 0 1 0 3.601zm1.554 13.019H3.782V9h3.109v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Davide Mazzucco</p>
+    </div>
+  </footer>
+
+  <script>
+    // Current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const links  = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    // Close nav on link click (mobile)
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
